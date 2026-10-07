@@ -1,0 +1,205 @@
+
+:root{
+    --amarillo: #ffff00;
+    --verde: #00ff00;
+    --cafe: #a52a2a;
+    --rosa: #ff69b4;
+    --rojo: #ff0000;
+    --azul: #0000ff;
+    --naranja: #ffa500;
+    --morado: #800080;
+
+    --txtcolor: #000;
+    --bgcolor: #fffafa;
+}
+
+
+body.modo_transparente{
+    --amarillo: #555500;
+    --verde: #006600;
+    --cafe: #5c1717;
+    --rosa: #993f70;
+    --rojo: #990000;
+    --azul: #000066;
+    --naranja: #995f00;
+    --morado: #4d004d;
+
+    --txtcolor: #ffff;
+    --bgcolor: #000;
+}
+
+
+body{
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    color: var(--txtcolor);
+    font-size: 3rem;
+}
+
+p{
+    color: var(--txtcolor);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+
+.div_flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.div_flexhijo{
+    height: 10rem;
+    width: 16%;
+    min-width: 150px;
+
+    border-radius: 15px;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.amarillo{
+    background-color: var(--amarillo);
+}
+
+.verde{
+    background-color: var(--verde);
+}
+
+.cafe{
+    background-color: var(--cafe);
+}
+
+.rosa{
+    background-color: var(--rosa);
+}
+
+.rojo{
+    background-color: var(--rojo);
+}
+
+.azul{
+    background-color: var(--azul);
+}
+
+.naranja{
+    background-color: var(--naranja);
+}
+
+.morado{
+    background-color: var(--morado);
+}
+
+
+.DMR_div1:hover{
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+
+.DMR_div2:hover{
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+.DMR_div3:hover{
+    transform: translateY(-15px) scale(1.1);
+}
+
+
+.DMR_div4:hover{
+    transform: skew(8deg) scale(1.1);
+}
+
+
+.DMR_div5:hover{
+    transform: rotate(-10deg) scale(1.1);
+}
+
+
+.DMR_div6:hover{
+    transform: translateX(15px) scale(1.1);
+}
+
+
+.DMR_div7:hover{
+    transform: rotate(5deg) scale(1.15);
+}
+
+
+.DMR_div8:hover{
+    transform: scale(1.2);
+    border-radius: 50px;
+}
+
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+
+    border-radius: 10px;
+    border: 1px solid var(--txtcolor);
+
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--txtcolor);
+    color: var(--bgcolor);
+}
+
+
+@media(max-width: 900px){
+
+    .div_flexhijo{
+        width: 35%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media(max-width: 600px){
+
+    body{
+        padding: 1rem;
+    }
+
+    .div_flexhijo{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
